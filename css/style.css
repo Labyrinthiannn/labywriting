@@ -265,8 +265,34 @@ div.contactsection {
 
 /* MOBILE QUERIES */
 
-@media screen and (max-width: 600px) {
-	.hpblurb, .hpblurbimage, .hpblurbtext, .mpintro2 {
-		display: none;
+@media screen and (max-width: 850px) {
+	.hpblurb, .hpblurbimage, .hpblurbtext {
+		font-size: 75%;
 	}
+	div.hpblurbimage img {
+		width: 100%;
+	}
+
+	div.mpintro1, div.mpintro2 {
+		background-color: rgba(0,0,0,0.7);
+        display: block;
+        flex-direction: column; 
+        text-align: center;
+        padding: 1%;
+        margin: 1%;
+        width: auto; 
+	}
+
+	div.introsectionbackground {
+		background: url(../images/mobilemetalla.jpg);
+		background-size: auto;
+		padding: 0;
+		margin: 0;
+		color: white;
+		background-color: white;
+	}
+	
+	.workssection, .contactsection, .mpintroblock {
+        flex-direction: column;
+    }
 }
